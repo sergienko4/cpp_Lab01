@@ -19,6 +19,6 @@ void Point::setY(int y) {
 	this->y = y;
 }
 void Point::print() const {
-	cout << "Value of X:" << this->x <<endl<< "The value of Y:" << this->y << endl;
+	cout << "center = (" << this->x << "," << this->y << ") ";
 
 }

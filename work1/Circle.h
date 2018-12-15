@@ -10,7 +10,6 @@ public:
 	void setColor(int color);
 	bool contains(const Point &p) const;
 	void print() const;
-	~Circle();
 private:
 	const Point center;
 	int radius, color;

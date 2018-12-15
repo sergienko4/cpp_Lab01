@@ -1,4 +1,4 @@
-#include "Circle.h"
+﻿#include "Circle.h"
 
 
 
@@ -16,19 +16,14 @@ void Circle::setColor(int color) {
 }
 bool Circle::contains(const Point &p) const {
 
-	int pointX = center.getX - p.getX;
-	int pointY = center.getY - p.getY;
+	// משוואת המגעל
+	int pointX = (center.getX() - p.getX());
+	int pointY = (center.getY() - p.getY());
 
-	return (pointX*pointX) + (pointY*pointY) <= radius*radius;
+	return  ((pointX*pointX) + (pointY*pointY)) <= (radius * radius);
 
-
-	}
+}
 void Circle::print() const {
 	center.print();
-	cout << "The radius is:" << radius << endl << "The color is:" << color << endl;
-}
-
-
-Circle::~Circle()
-{
+	cout << "Radius=" << radius <<  " color=" << color << endl;
 }
